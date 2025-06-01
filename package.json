@@ -1,0 +1,24 @@
+{
+  "name": "project-archive_53",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HosnyYousef/project-archive_53.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HosnyYousef/project-archive_53/issues"
+  },
+  "homepage": "https://github.com/HosnyYousef/project-archive_53#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongodb": "^6.16.0"
+  }
+}
