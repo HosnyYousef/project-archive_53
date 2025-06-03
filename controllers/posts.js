@@ -43,7 +43,7 @@ module.exports = {
       res.redirect("/profile");
     } catch (err) {
       console.log(err);
-    }
+    } 
   },
   likePost: async (req, res) => {
     try {
