@@ -1,5 +1,6 @@
 const cloudinary = require("../middleware/cloudinary");
 const Post = require("../models/Post");
+const Comment = require("../models/Comment");
 
 module.exports = {
   getProfile: async (req, res) => {
@@ -18,6 +19,9 @@ module.exports = {
       console.log(err);
     }
   },
+
+
+
   getPost: async (req, res) => {
     try {
       const post = await Post.findById(req.params.id);
