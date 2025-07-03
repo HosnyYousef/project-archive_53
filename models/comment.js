@@ -1,17 +1,19 @@
 const mongoose = require("mongoose");
 
-const PostSchema = new mongoose.Schema({
+const CommentSchema = new mongoose.Schema({
   comment: {
     type: String,
-    required: true,
+    required: true, // do we need curly brackets and 'required here?'
   },
+
   likes: {
     type: Number,
-    required: true,
+    default: 0,
+    required: true, // <-- do we need this?
   },
   post: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: "User",
+    ref: "Post",
   },
   createdAt: {
     type: Date,
@@ -19,4 +21,4 @@ const PostSchema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model("Post", PostSchema);
+module.exports = mongoose.model("Post", CommentSchema);
