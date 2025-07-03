@@ -70,7 +70,3 @@ app.use("/post", postRoutes);
 app.listen(process.env.PORT, () => {
   console.log("Server is running, you better catch it!");
 });
-
-
-// what to do when adding a branch
-// testing if this works
