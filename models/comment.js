@@ -5,7 +5,6 @@ const CommentSchema = new mongoose.Schema({
     type: String,
     required: true, // do we need curly brackets and 'required here?'
   },
-
   likes: {
     type: Number,
     default: 0,

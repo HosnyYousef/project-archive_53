@@ -29,14 +29,23 @@
         <a class="btn btn-primary" href="/feed">Return to Feed</a>
       </div>
 
-      <div>
+      <!-- <div>
+        <form action="/comment/createComment/<%= post._id %>" method="POST">
+          <input id="comment" name="comment" placeholder="Add a comment…">
+          <button type="submit">Post</button>
+        </form>
+      </div> -->
+
+      <!-- <div>
         <h2>Comments</h2>
-          <ul>
-            <% comments.forEach(c => { %>
-              <li><%= c.comment %></li>
+        <ul>
+          <% comments.forEach(c=> { %>
+            <li>
+              <%= c.comment %>
+            </li>
             <% }) %>
-          </ul>
-      </div>
+        </ul>
+      </div> -->
 
     </div>
   </div>
