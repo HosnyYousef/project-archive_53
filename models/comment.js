@@ -1,10 +1,7 @@
 const mongoose = require("mongoose");
 
 const CommentSchema = new mongoose.Schema({
-  comment: {
-    type: String,
-    required: true, // do we need curly brackets and 'required here?'
-  },
+  comment: String,
   likes: {
     type: Number,
     default: 0,
@@ -20,4 +17,4 @@ const CommentSchema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model("Post", CommentSchema);
+module.exports = mongoose.models.Post || mongoose.model('Post', PostSchema);
